@@ -2,7 +2,7 @@
 
 A simple command for starting vscode in a remote ssh folder.
 
-# Usage
+## Usage
 
 You need to have node and vscode installed.
 
@@ -24,7 +24,7 @@ alternativly you can also run directly via npx (note: only the `ssh-code` comman
 npx ssh-code user@host:/path
 ```
 
-# How it works
+## How it works
 
 All it does is parse the user, host and path from the arguments and run the vscode command:
 ```
@@ -33,6 +33,6 @@ code --folder-uri=vscode-remote://ssh-remote+<user>@<host>/<path>
 
 see the [related issue](https://github.com/microsoft/vscode-remote-release/issues/3324) for more info.
 
-# License
+## License
 
 MIT
