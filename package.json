@@ -1,0 +1,13 @@
+{
+  "name": "ssh-code",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "bin": {
+    "ssh-code": "index.mjs",
+    "scode": "index.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.4.1"
+  }
+}
