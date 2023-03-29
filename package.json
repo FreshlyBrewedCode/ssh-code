@@ -1,6 +1,6 @@
 {
   "name": "ssh-code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.mjs",
   "bin": {
     "ssh-code": "index.mjs",
