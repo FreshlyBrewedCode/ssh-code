@@ -31,9 +31,11 @@ program
 
     // Run vscode with the ssh folder
     const connection = `${user ? user + "@" : ""}${host}`;
-    const proc = spawn("code", [
-      `--folder-uri=vscode-remote://ssh-remote+${connection}/${path}`,
-    ]);
+    const proc = spawn(
+      "code",
+      [`--folder-uri=vscode-remote://ssh-remote+${connection}/${path}`],
+      { shell: process.platform === "win32" }
+    );
   });
 
 program.parse();
